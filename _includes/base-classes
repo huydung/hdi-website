@@ -1,0 +1,9 @@
+{%- capture classes -%}
+{% if site.hdi.dark_mode.always %}dark-mode{% endif %}
+{% if site.hdi.no_toc %} no-toc{% endif %}
+{% if site.hdi.no_break_layout %} no-break-layout{% endif %}
+{% if site.hdi.no_large_headings %} no-large-headings{% endif %}
+{% if site.hdi.no_third_column %} no-third-column{% endif %}
+{% if site.hdi.no_drawer %} no-drawer{% endif %}
+{%- endcapture -%}
+{{- classes | strip_newlines | strip -}}
